@@ -1,0 +1,11 @@
+parameters:
+    mqtt_reference: mqtt
+    password_file: /mosquitto/config/pwfile
+    
+services:
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+    EnderLab\MqttBundle\:
+        resource: '../src/'

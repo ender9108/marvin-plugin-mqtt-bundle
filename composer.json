@@ -1,0 +1,21 @@
+{
+    "name": "enderlab/marvin-plugin-mqtt-bundle",
+    "description": "",
+    "type": "symfony-bundle",
+    "licence": "MIT",
+    "version": "1.0.0",
+    "require": {
+        "ext-swoole": "*",
+        "enderlab/ddd-bundle": "1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EnderLab\\MqttBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EnderLab\\MqttBundle\\Tests\\": "tests/"
+        }
+    }
+}

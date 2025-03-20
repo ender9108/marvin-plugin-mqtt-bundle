@@ -1,0 +1,10 @@
+services:
+  mosquitto:
+    build:
+      dockerfile: ./docker/mosquitto/config/Dockerfile
+    container_name: ${APP_NAME}-mosquitto
+    restart: unless-stopped
+    volumes:
+      - ./docker/mosquitto/config:/mosquitto/config
+      - ./docker/mosquitto/volume/data:/mosquitto/data
+      - ./docker/mosquitto/volume/log:/mosquitto/log
