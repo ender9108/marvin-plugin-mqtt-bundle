@@ -3,10 +3,10 @@
     "description": "",
     "type": "symfony-bundle",
     "licence": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "require": {
         "ext-swoole": "*",
-        "enderlab/ddd-bundle": "1.0.0"
+        "enderlab/ddd-bundle": "1.0.*"
     },
     "autoload": {
         "psr-4": {
